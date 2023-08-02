@@ -3,3 +3,11 @@ python manage.py migrate
 python manage.py runserver
 python manage.py startapp main
 
+
+
+virtualenv --python=python3.9 venv
+source venv/bin/activate
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
